@@ -1,12 +1,20 @@
 Problema 1 (Enviando Mails – UVA 10986):
 
-Hay n servidores SMTP conectados por cables de red. Cada uno de los cables m conecta dos computadoras y tienen una latencia para enviar un mensaje de correo electrónico que se mide en milisegundos. ¿Cuál es el menor tiempo necesario para enviar un mensaje desde el servidor S a T servidor a lo largo de una secuencia de cables? Supongamos que no existe ningún tipo de latencia en los servidores.
+Hay n servidores SMTP conectados por cables de red. Cada uno de los cables m conecta dos computadoras y tienen una latencia
+para enviar un mensaje de correo electrónico que se mide en milisegundos. ¿Cuál es el menor tiempo necesario para enviar un
+mensaje desde el servidor S a T servidor a lo largo de una secuencia de cables? Supongamos que no existe ningún tipo de
+latencia en los servidores.
 
 Entrada:
-La primera línea de entrada indica el número (N) de casos prueba. Cada caso de prueba empieza con una línea que contiene n (2 <= n <20000), m (0 <= m <50000), S (0 <= S <n) y T (0 <= T <n), S! = T. Donde: n es el número de servidores, m el número de conexiones, el servidor de origen y T el servidor de destino. Cada una de las siguientes m líneas contiene 3 enteros: 2 servidores diferentes (en el rango [0, n-1]) que están conectados por un cable bidireccional y la latencia, w, a lo largo de este cable (0 <= w <= 10000). 
+La primera línea de entrada indica el número (N) de casos prueba. Cada caso de prueba empieza con una línea que contiene n
+(2 <= n <20000), m (0 <= m <50000), S (0 <= S <n) y T (0 <= T <n), S! = T. Donde: n es el número de servidores, m el número
+de conexiones, el servidor de origen y T el servidor de destino. Cada una de las siguientes m líneas contiene 3 enteros: 2
+servidores diferentes (en el rango [0, n-1]) que están conectados por un cable bidireccional y la latencia, w, a lo largo de
+este cable (0 <= w <= 10000). 
 
 Salida:
-Para cada caso de prueba (x), se deberá generar una línea "Caso # x:", seguido por el número de milisegundos necesarios para enviar un mensaje de S a T. Imprimir "inalcanzable" si no hay ninguna ruta de S a T.
+Para cada caso de prueba (x), se deberá generar una línea "Caso # x:", seguido por el número de milisegundos necesarios para
+enviar un mensaje de S a T. Imprimir "inalcanzable" si no hay ninguna ruta de S a T.
 
 Ejemplo de Entrada:  
 
