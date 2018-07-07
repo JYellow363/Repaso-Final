@@ -1,0 +1,60 @@
+Problema 3 (Viaje sin Parada – UVA 341):
+
+En 2100, los viajes espaciales serán una realidad en la Vía Láctea (galaxia solar). La agecnai de transporte Interstar ofrece
+servicios regulares de transporte directo el espacio (vuelos) entre algunos de los destinos más populares en la Vía Láctea. El
+de estos transportes regulares directos se dan en Galaros (Galaxy unidad de moneda) y estos mismos se publican en varios idiomas.
+Para sus viajes a los planetas que no está dentro del horario de Intestar existen viajes espaciales más lentos, al planeta más
+cercano que se encuentra en la lista de transporte directo. 
+
+Para ayudar a los viajeros planificar su itinerario, Interstar quiere ofrecer una aplicación móvil que puede encontrar la mejor
+opción de viaje, basado en el coste total del transporte directo en el itinerario. Teniendo definido el total de los planetas de
+partida y de destino en el itinerario, se debe encontrar la secuencia de transporte directo que tiene el más bajo costo total de
+viaje. 
+
+La salida del programa debe indicar todos los planetas en orden en el cual se debe pasar por cada uno de estos para obtener la
+mejor ruta. Si en caso existan dos o más rutas con el mismo costo, entonces la ruta que pasa por el menor número de planetas
+intermedios es considerada como una vía mejor. Siempre existirá una mejor ruta única para cualquiera de los casos de prueba.
+
+Especificaciones técnicas:
+
+El número de planetas “s” en la lista de transporte directo se encuentra entre 1 y 26. Los planetas están etiquetados con las
+letras mayúsculas del alfabeto Inglés, es decir: “A”, “B”, “C” , ..., “Z”, sin ningún orden en particular.
+El transporte Interstar opera en la mayoría de “p” (entre 1 y 200), rutas de transporte directo entre los planetas. Solo existe
+una ruta de transporte directo entre dos planetas.
+
+El costo de cualquier transporte se da como un número natural menor o igual a 100 Galaros.
+
+Entrada:
+
+La primera línea del archivo de entrada contiene dos enteros: s y p, separadas por un espacio. Las siguientes p líneas contienen
+cada una dos letras: la ei y ej, seguido de un número natural, dij, lo que indica que existe un transporte directo entre los
+planetas ei ej con un costo de dij. La siguiente línea contiene un entero n<=20, lo que indica el número de consultas a seguir.
+Para cada una de las siguientes n líneas, se detallan dos letras y ek em, lo que indica que un usuario está buscando un mejor
+(menor costo) camino para llegar desde el planeta ek al plantea em.
+     
+Salida:
+
+Para cada una de las n consultas en la entrada, se solicita de salida una sola línea con la la mejor ruta a tomar, detallando la
+secuencia desde el planeta de inicio al plantea destino, detallando los planetas intermedios, todos separados por un espacio en
+blanco.
+
+
+ 
+Ejemplo de Entrada: 
+5 7 
+A B 1
+B C 2
+C D 3
+D E 2
+E A 1
+A D 3
+A C 4
+3 
+B D 
+A D 
+E C  
+
+Ejemplo de Salida: 
+B A D 
+A D 
+E A B C
